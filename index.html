@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic calculator for my first project with HTML, CSS and Javascript">
+    <meta name="keywords" content="Calculator, Javascript, HTML, CSS, first project">
+    <link rel="shortcut icon" href="/icons/calculator-solid-24.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+
+            <div class="keyboard">
+                
+                <p class="display" id="display"></p>
+
+                <table>
+                    <tr>
+                        <td><button class="btn__especial" onclick="clean()">AC</button></td>
+                        <td><button class="btn__delete" onclick="backspace()"><ion-icon name="backspace-outline"></ion-icon></button></td>
+                        <td><button class="btn__operator" onclick="add('%')">%</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn__number" onclick="add('7')">7</button></td>
+                        <td><button class="btn__number" onclick="add('8')">8</button></td>
+                        <td><button class="btn__number" onclick="add('9')">9</button></td>
+                        <td><button class="btn__operator" onclick="add('*')">x</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn__number" onclick="add('4')" >4</button></td>
+                        <td><button class="btn__number" onclick="add('5')" >5</button></td>
+                        <td><button class="btn__number" onclick="add('6')" >6</button></td>
+                        <td><button class="btn__operator" onclick="add('-')">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn__number" onclick="add('1')">1</button></td>
+                        <td><button class="btn__number" onclick="add('2')">2</button></td>
+                        <td><button class="btn__number" onclick="add('3')">3</button></td>
+                        <td><button class="btn__operator" onclick="add('+')">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn__number" onclick="add('0')">0</button></td>
+                        <td><button class="btn__number" onclick="add('.')">.</button></td>
+                        <td><button id="btn__especial" onclick="enter()"> = </button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
